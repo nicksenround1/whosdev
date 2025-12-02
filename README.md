@@ -1,7 +1,15 @@
 <div align="center">
-  <img src="https://placehold.co/1280x320/1DA1F2/FFFFFF?text=Who's+the+Dev?&font=roboto" width="100%" alt="Banner" />
+  <img src="./assets/banner.png" alt="Who's the Dev Banner" width="100%" />
+
   <h1>🕵️ Who's the Dev?</h1>
   <h3>Solana Meme 交易辅助神器 | 3秒极速透视 Dev 资金与声誉</h3>
+
+  <p>
+    <img src="https://img.shields.io/badge/Platform-Pump.fun-green?style=flat-square" />
+    <img src="https://img.shields.io/badge/Chain-Solana-blueviolet?style=flat-square" />
+    <img src="https://img.shields.io/badge/License-MIT-orange?style=flat-square" />
+  </p>
+  
   <p>
     <a href="https://twitter.com/ckn_acee" target="_blank">
       <img src="https://img.shields.io/twitter/follow/ckn_acee?style=social" />
