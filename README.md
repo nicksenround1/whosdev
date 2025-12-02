@@ -45,28 +45,21 @@
 我们采用 “Helius 免费 API” 彻底解决 RPC拥堵 问题（这个最关键，因为余额是判断巨鲸的核心）。推特部分，我教你接入 Google 搜索 API（有免费额度，不够可以用付费扩容）。
 
 第一步：获取必要的 API Key (5分钟)
+
 解决 RPC 问题 (Helius):
-
-去 helius.dev 注册一个账号（不需要信用卡）。
-
-在 Dashboard 复制你的 API Key (一串 UUID)。
-
-Helius 的免费层非常大方，个人使用完全足够。
+- 去 helius.dev 注册一个账号（不需要信用卡）。
+- 在 Dashboard 复制你的 API Key (一串 UUID)。Helius 的免费层非常大方，个人使用完全足够。
 
 解决推特搜索问题 (Google Custom Search):
-
-去 Google Programmable Search Engine。
-
-点击 "Add"，命名为 TwitterFinder。
-
-Search specific sites 填入: twitter.com 和 x.com。
-
-创建后，记下 Search engine ID (CX)。
-
-然后去 Google Custom Search API 获取 API Key。
+- 去 Google Programmable Search Engine。
+- 点击 "Add"，命名为 TwitterFinder。
+- Search specific sites 填入: twitter.com 和 x.com。
+- 创建后，记下 Search engine ID (CX)。
+- 然后去 Google Custom Search API 获取 API Key。
 
 注意：每天免费 100 次。如果你是高频交易，建议绑定结算卡，每 1000 次查询 $5 (约 35 RMB)，这比你在土狗上亏的钱少多了。
 
+## 🕹️ 操作流程 (Vibe Check)
 1. 下载本代码库。
 2. 打开 `background.js` 文件。
 3. 找到顶部的配置区，填入你的 Key：
@@ -75,4 +68,12 @@ Search specific sites 填入: twitter.com 和 x.com。
    const GOOGLE_CX = "你的_GOOGLE_CX"; 
    const GOOGLE_API_KEY = "你的_GOOGLE_API_KEY"; 
    ```
-4. 在 Chrome 中加载扩展。
+## 🚀 安裝與測試
+1. 打開 Chrome，網址輸入 chrome://extensions/。
+2. 右上角開啟 「開發者模式」。
+3. 點擊左上角 「載入未封裝項目」。
+4. 選擇你的 whos-the-dev 資料夾。
+5. 測試：
+  打開 Pump.fun 網站（如果已經打開，請刷新頁面）。
+  隨便點一個新幣。
+  看 Dev 的名字旁邊，是否出現了 [X: ...] 和 [餘額: ...] 的標籤。
