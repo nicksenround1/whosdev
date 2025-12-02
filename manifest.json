@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Who's the Dev? - Meme Sniper",
+  "version": "1.0",
+  "description": "Instant Dev Reputation & Balance Checker for Pump.fun",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": [
+    "https://pump.fun/*",
+    "https://mainnet.helius-rpc.com/*",
+    "https://www.googleapis.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://pump.fun/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
